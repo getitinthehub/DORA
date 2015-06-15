@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="DORA.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/MasterCSS.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .btnLogo {}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="center">
+        
+        <asp:Button ID="btnLogo" runat="server" Text="" CssClass="btnLogo" Height="100px" Width="350px"/>
+        <br />
+        
+    </div>
+        
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <%-- dropdownmenu --%>
+        <asp:Panel ID="Panel3" runat="server" HorizontalAlign="Center" CssClass="center">
+
+                                <div class="center">
+                <div id="menuh">
+                    <ul>
+                        <li><a class="parent">
+                            <asp:Button ID="btnDocentenBestand" runat="server" Text="Docentenbestand" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                            <ul>
+                                <li><br /></li>
+                                <li><a class="parent"><asp:Button ID="btnDocentenbestandUpdaten" runat="server" Text="Updaten docentenbestand" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                                    
+                                </li>
+                                <li><a class="parent"><asp:Button ID="btn" runat="server" Text="Toevoegen docenten (handmatig)" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                       <li><a class="parent">
+                            <asp:Button ID="Button1" runat="server" Text="Lokalenbestand" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                            <ul>
+                                <li><br /></li>
+                                <li><a class="parent"><asp:Button ID="Button3" runat="server" Text="Updaten docentenbestand" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                                    
+                                </li>
+                                <li><a class="parent"><asp:Button ID="Button4" runat="server" Text="Toevoegen docenten (handmatig)" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                       <li><a class="parent">
+                            <asp:Button ID="Button5" runat="server" Text="Gebruikers" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                            <ul>
+                                <li><br /></li>
+                                <li><a class="parent"><asp:Button ID="Button8" runat="server" Text="Updaten docentenbestand" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                                    
+                                </li>
+                                <li><a class="parent"><asp:Button ID="Button9" runat="server" Text="Toevoegen docenten (handmatig)" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                       <li><a class="parent">
+                            <asp:Button ID="Button10" runat="server" Text="Ouderavondgesprekken" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                            <ul>
+                                <li><br /></li>
+                                <li><a class="parent"><asp:Button ID="Button12" runat="server" Text="Updaten docentenbestand" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                                    
+                                </li>
+                                <li><a class="parent"><asp:Button ID="Button13" runat="server" Text="Toevoegen docenten (handmatig)" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                       <li><a class="parent">
+                            <asp:Button ID="Button2" runat="server" Text="Loguit" border="none" BackColor="Transparent" BorderColor="Transparent" CssClass="parent"/></a>
+                                </li>
+                            </ul>
+               </div>
+            </div>
+
+        </asp:Panel>
+
+
+
+    </form>
+</body>
+</html>

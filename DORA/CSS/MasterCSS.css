@@ -1,0 +1,120 @@
+﻿body {
+
+    background-image: url('../Images/bgwhite2large.png');
+    background-size:cover;
+    
+
+}
+
+.btnLogo{
+    background-image: url('../Images/ROCLogo.png');
+    background-repeat: no-repeat;
+    background-position:center;
+	background-color: transparent;
+    border-style:  none;
+    border-color: inherit;
+    border-width: medium;
+    width: 350px;
+    height: 100px;
+    font-size:16px;
+    font-weight:bold;
+    color: black;
+}
+
+/*dropdownmenu*/
+
+
+#menuh
+	{
+	font-size: small;
+	font-family: arial, helvetica, sans-serif;
+    margin-left:25%;
+    margin-right:20%;
+    background-repeat: no-repeat;
+    background-position:center;
+	width:auto;
+	}
+
+#menuh:hover
+	{
+	font-size: small;
+	font-family: arial, helvetica, sans-serif;
+    /*background-color:transparent;*/
+    background-repeat: no-repeat;
+    background-position:center;
+	width:auto;
+	}
+		
+#menuh a
+	{
+	text-align: center;
+	display:block;
+	border: 1px solid #0040FF;
+	white-space:nowrap;
+	padding: 0.3em;
+	}
+	
+
+	
+
+
+#menuh ul
+	{
+	list-style:none;
+	padding:0;
+    float:left;
+    display:inline;
+    align-content:center;
+	width:auto;	/* width of all menu boxes */
+	/* NOTE: For adjustable menu boxes you can comment out the above width rule.
+	However, you will have to add padding in the "#menh a" rule so that the menu boxes
+	will have space on either side of the text -- try it */
+	}
+
+#menuh ul ul
+	{
+	position:absolute;
+	z-index:500;
+	top:auto;
+	display:none;
+	padding: 1em;
+	margin:-1em 0 0 -1em;
+	}
+
+
+div#menuh li:hover
+	{
+	cursor:pointer;
+	z-index:100;
+    width:auto;
+	}
+
+div#menuh li:hover ul ul,
+div#menuh li li:hover ul ul,
+div#menuh li li li:hover ul ul,
+div#menuh li li li li:hover ul ul
+{display:none;}
+
+div#menuh li:hover ul,
+div#menuh li li:hover ul,
+div#menuh li li li:hover ul,
+div#menuh li li li li:hover ul
+{display:block;}
+
+.center {
+    align-content:center;
+    align-items:center;
+    align-self:center;
+    text-align:center;
+}
+
+.parent:hover {
+    /*background-image:url('../Images/bgwhite.png');*/
+    background-color: red;
+}
+
+.parent 
+{
+    font-size: 16px;
+    font-weight:bold;
+}
